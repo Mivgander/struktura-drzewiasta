@@ -1,0 +1,107 @@
+body
+{
+    background-color: var( --bs-gray-900)
+}
+
+.list-group-item
+{
+    background-color: var( --bs-gray-900);
+    color: var(--bs-white);
+    border-color: var(--bs-white);
+}
+
+.list-group {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group .list-group {
+    margin-bottom: 0;
+}
+
+.list-group .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+}
+
+.list-group .list-group
+{
+    padding-left: 45px;
+}
+
+.list-group-item > .more:hover
+{
+    color: var(--bs-indigo);
+    cursor: pointer;
+}
+
+.plus, .alphaSort, .zmienNazwe, .zmienRodzica, .usunKategorie, .all
+{
+    background-color: var(--bs-indigo);
+    margin-left: 5px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.plus:hover, .alphaSort:hover, .zmienNazwe:hover, .zmienRodzica:hover, .usunKategorie:hover, .all:hover
+{
+    background-color: var(--bs-white);
+    color: var(--bs-indigo);
+    cursor: pointer;
+}
+
+.myButton
+{
+    background-color: var(--bs-indigo);
+    border-color: var(--bs-indigo);
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: var(--bs-white);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 0.4rem;
+    line-height: normal;
+    border-style: solid;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.myButton:hover
+{
+    color: var(--bs-indigo);
+    background-color: var(--bs-white);
+    border-color: var(--bs-white);
+}
+
+.form-check-input:checked
+{
+    background-color: var(--bs-indigo);
+    border-color: var(--bs-indigo);
+}
+
+
+#dodajKategorie, #zmienNazweKategorii, #zmienRodzicaKategorii, #usunKategorie
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+.opcje
+{
+    max-width: 600px;
+    background-color: var( --bs-gray-900);
+    border: 1px solid #636363;
+}
+
+#divError, #sukces
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 7;
+}
